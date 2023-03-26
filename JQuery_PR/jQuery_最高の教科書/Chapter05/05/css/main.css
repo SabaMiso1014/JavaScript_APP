@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/* Base */
+html { font-family: "Ropa Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; font-size: 16px; line-height: 1.5; }
+body { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); min-width: 960px; }
+h1, h2, h3, p, ul { margin: 0; }
+ul { padding-left: 0; }
+ul li { list-style-type: none; }
+a { color: inherit; text-decoration: none; }
+img { vertical-align: middle; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+
+/*
+ * Work section
+ */
+
+.work-section {
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.no-boxshadow .work-section {
+    border-bottom: 1px solid rgb(24, 24, 24);
+}
+.work-section .section-header {
+    background: url(../img/bg-noise.png);
+    line-height: 70px;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10;
+}
+.no-boxshadow .work-section .section-header {
+    border-top: 1px solid rgb(204, 204, 204);
+}
+.work-section .section-header > .inner {
+    margin: auto;
+    width: 960px;
+}
+.work-section h2 {
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* タブ */
+.work-section .tabs-nav {
+    border-left: 1px solid rgb(218, 218, 218);
+    float: right;
+    letter-spacing: 1px;
+    -webkit-box-shadow: inset 1px 0 rgb(255, 255, 255);
+            box-shadow: inset 1px 0 rgb(255, 255, 255);
+}
+.work-section .tabs-nav li {
+    border-right: 1px solid rgb(218, 218, 218);
+    float: left;
+    position: relative;
+    -webkit-box-shadow: 1px 0 rgb(255, 255, 255);
+            box-shadow: 1px 0 rgb(255, 255, 255);
+}
+.work-section .tabs-nav a {
+    display: block;
+    padding: 0 1.36em;
+    position: relative;
+}
+.work-section .tabs-nav a:hover,
+.work-section .tabs-nav a.active {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+.work-section .tabs-nav a.active:after {
+    background: url(../img/sprites.png) no-repeat 0 0;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 37px;
+    height: 19px;
+    margin-left: -18px;
+}
+
+/* パネル */
+.work-section .section-body {
+    height: 400px;
+    position: relative;
+}
+.work-section .section-body .image-wrapper {
+    height: 100%;
+    min-width: 960px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.work-section .section-body .image-wrapper img {
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+}
+
+.no-js .work-section .tabs-nav {
+    display: none;
+}
+.no-js .work-section .section-body {
+    height: auto;
+}
+.no-js .work-section .section-body .image-wrapper,
+.no-js .work-section .section-body .content {
+    height: 400px;
+}
+
+.work-section .section-body .content {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+    width: 960px;
+    margin: auto;
+    position: relative;
+}
+.work-section .section-body .content > .inner {
+    position: absolute;
+    width: 250px;
+}
+.work-section .section-body #work01 .content > .inner {
+    top: 20px;
+    left: 680px;
+}
+.work-section .section-body #work02 .content > .inner {
+    top: 140px;
+    left: 40px;
+}
+.work-section .section-body #work03 .content > .inner {
+    top: 50px;
+    left: 50px;
+}
+.work-section .section-body #work04 .content > .inner {
+    top: 50px;
+    left: 50px;
+}
+.work-section .section-body #work05 .content > .inner {
+    top: 50px;
+    left: 680px;
+}
+.work-section .section-body .title {
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.work-section .section-body .description {
+    font-size: 12px;
+    line-height: 1.75;
+}
+.work-section .section-body .read-more {
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.25em 1em;
+    margin-top: 1.5em;
+    border: 2px solid;
+    letter-spacing: 1px;
+}
+.textshadow .work-section .section-body .read-more {
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.5) inset;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.5) inset;
+}

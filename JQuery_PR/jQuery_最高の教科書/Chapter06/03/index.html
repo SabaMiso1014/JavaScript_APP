@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Chapter 06-03 &#xB7; jQuery 最高の教科書</title>
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="./js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="./js/vendor/masonry.pkgd.min.js"></script>
+<script src="./js/main.js"></script>
+</head>
+<body>
+
+<header class="page-header" role="banner">
+    <div class="inner clearfix">
+        <h1 class="site-logo"><a href="./"><img src="./img/logo.png" alt="Shiftbrain" height="21" width="169"></a></h1>
+        <form class="filter-form" id="gallery-filter">
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-all" value="all" checked>
+                <label for="filter-all">All</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-people" value="people">
+                <label for="filter-people">People</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-animals" value="animals">
+                <label for="filter-animals">Animals</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-nature" value="nature">
+                <label for="filter-nature">Nature</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-plantes" value="plantes">
+                <label for="filter-plantes">Plantes</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-architects" value="architects">
+                <label for="filter-architects">Architects</label>
+            </span>
+        </form>
+    </div>
+</header>
+
+<div class="page-main" role="main">
+    <ul class="gallery" id="gallery"></ul>
+    <button class="load-more" id="load-more">Load more</button>
+</div>
+
+</body>
+</html>

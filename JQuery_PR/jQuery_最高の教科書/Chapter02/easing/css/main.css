@@ -1,0 +1,195 @@
+/*
+ * Base
+ */
+html {
+    font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    vertical-align: middle;
+}
+
+button {
+    outline: none;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.page-header h1 {
+    width: 976px;
+    height: 80px;
+    margin: 0 auto;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 80px;
+    letter-spacing: 0.1em;
+}
+
+.page-main {
+    position: relative;
+}
+
+.page-main > div {
+    padding: 50px 0 100px;
+}
+
+.page-main > div h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 50px;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+}
+
+.page-main > aside {
+    background-color: rgba(0,0,0,0.8);
+    width: 350px;
+    height: 100%;
+    top: 0;
+    left: -350px;
+    position: fixed;
+}
+
+.page-main > aside ul {
+    margin: 0;
+    padding: 0;
+    top: 50px;
+    left: 114px;
+    position: absolute;
+}
+
+.page-main > aside li {
+    margin: 0 0 20px;
+    list-style: none;
+}
+
+.page-main > aside button {
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 52px;
+    height: 132px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#easing {
+    background-color: #019faa;
+}
+
+#easing .inner{
+    width: 984px;
+    margin: 0 auto;
+}
+
+#easing div.inner {
+    color: #fff;
+    width: 960px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+    text-align: right;
+}
+
+#easing input {
+    border: none;
+    width: 30px;
+}
+
+#easing h3.inner {
+    color: #fff;
+    width: 960px;
+    padding: 0 13px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+}
+
+#easing ul.inner {
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+#easing li {
+    position: relative;
+    letter-spacing: 0.08em;
+    color: #fff;
+    font-size: 14px;
+    list-style: none;
+    width: 140px;
+    height: 184px;
+    padding: 0;
+    margin: 0 12px;
+    float: left;
+}
+
+#easing img {
+    position: absolute;
+    display: block;
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+#easing hr {
+    width: 960px;
+    border: none;
+    border-top: 2px #fff solid;
+    margin-bottom: 30px;
+}
+
+#easing hr.group {
+    border-top: 1px rgba(255,255,255,0.4) solid;
+}
+
+.page-footer {
+    background-color: #656565;
+}
+
+.page-footer small {
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    text-align: right;
+    width: 976px;
+    margin: 0 auto;
+    height: 120px;
+    line-height: 120px;
+    letter-spacing: 0.15em;
+}
+
+.page-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+ * Helpers
+ */
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+

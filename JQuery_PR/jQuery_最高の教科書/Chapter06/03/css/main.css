@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* Base */
+html { font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; font-size: 14px; line-height: 1.5; }
+body { background-color: rgb(245, 245, 245); color: rgb(0, 0, 0); }
+h1 { font-size: 100%; margin: 0; }
+img { vertical-align: middle; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+
+/* Page header */
+.page-header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 32px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.page-header > .inner {
+    width: 950px;
+    padding: 8px 10px;
+    margin: auto;
+}
+.site-logo {
+    float: left;
+    line-height: 1;
+}
+
+/* Page main */
+.page-main {
+    margin: auto;
+    padding: 103px 10px;
+    width: 950px;
+}
+
+
+/*!
+ * Gallery
+ */
+
+.gallery {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-item {
+    list-style: none;
+    margin-top: 10px;
+}
+.gallery-item.is-loading {
+    opacity: 0;
+}
+.gallery-item a {
+    display: block;
+}
+.gallery-item .caption {
+    display: none;
+}
+
+/* フィルター */
+.filter-form {
+    float: right;
+}
+.filter-form label {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0.25em;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+.filter-form label.ui-state-focus {
+    outline: 1px dotted;
+}
+.filter-form label .ui-icon {
+    background: url(../img/sprites.png) no-repeat 0 0;
+    display: inline-block;
+    height: 17px;
+    margin-right: 0.5em;
+    margin-top: 2px;
+    width: 17px;
+    vertical-align: top;
+}
+.filter-form label.ui-state-active .ui-icon {
+    background-position: -20px 0;
+}
+
+/* 追加読み込みボタン */
+.load-more {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(230, 230, 230);
+    display: block;
+    padding: 1em 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* jQuery UI helper */
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Chapter 07 &#xB7; jQuery 最高の教科書</title>
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/vendor/jquery.mousewheel.js"></script>
+<script src="./js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="./js/main.js"></script>
+</head>
+<body>
+
+<nav class="scene-nav" id="nav">
+    <ul>
+        <li><a href="#scene-1">1</a></li>
+        <li><a href="#scene-2">2</a></li>
+        <li><a href="#scene-3">3</a></li>
+    </ul>
+</nav>
+
+<div id="page-main-wrap">
+    <div id="page-main">
+
+        <div class="scene" id="scene-1">
+            <div class="image-sequence">
+                <img src="img/sequence/sky001.jpg" alt="">
+                <img src="img/sequence/sky002.jpg" alt="">
+                <img src="img/sequence/sky003.jpg" alt="">
+                <img src="img/sequence/sky004.jpg" alt="">
+                <img src="img/sequence/sky005.jpg" alt="">
+                <img src="img/sequence/sky006.jpg" alt="">
+                <img src="img/sequence/sky007.jpg" alt="">
+                <img src="img/sequence/sky008.jpg" alt="">
+                <img src="img/sequence/sky009.jpg" alt="">
+                <img src="img/sequence/sky010.jpg" alt="">
+                <img src="img/sequence/sky011.jpg" alt="">
+                <img src="img/sequence/sky012.jpg" alt="">
+                <img src="img/sequence/sky013.jpg" alt="">
+                <img src="img/sequence/sky014.jpg" alt="">
+                <img src="img/sequence/sky015.jpg" alt="">
+                <img src="img/sequence/sky016.jpg" alt="">
+                <img src="img/sequence/sky017.jpg" alt="">
+                <img src="img/sequence/sky018.jpg" alt="">
+                <img src="img/sequence/sky019.jpg" alt="">
+                <img src="img/sequence/sky020.jpg" alt="">
+                <img src="img/sequence/sky021.jpg" alt="">
+                <img src="img/sequence/sky022.jpg" alt="">
+                <img src="img/sequence/sky023.jpg" alt="">
+                <img src="img/sequence/sky024.jpg" alt="">
+                <img src="img/sequence/sky025.jpg" alt="">
+                <img src="img/sequence/sky026.jpg" alt="">
+                <img src="img/sequence/sky027.jpg" alt="">
+                <img src="img/sequence/sky028.jpg" alt="">
+                <img src="img/sequence/sky029.jpg" alt="">
+                <img src="img/sequence/sky030.jpg" alt="">
+                <img src="img/sequence/sky031.jpg" alt="">
+                <img src="img/sequence/sky032.jpg" alt="">
+                <img src="img/sequence/sky033.jpg" alt="">
+                <img src="img/sequence/sky034.jpg" alt="">
+                <img src="img/sequence/sky035.jpg" alt="">
+                <img src="img/sequence/sky036.jpg" alt="">
+                <img src="img/sequence/sky037.jpg" alt="">
+                <img src="img/sequence/sky038.jpg" alt="">
+                <img src="img/sequence/sky039.jpg" alt="">
+                <img src="img/sequence/sky040.jpg" alt="">
+                <img src="img/sequence/sky041.jpg" alt="">
+                <img src="img/sequence/sky042.jpg" alt="">
+                <img src="img/sequence/sky043.jpg" alt="">
+                <img src="img/sequence/sky044.jpg" alt="">
+                <img src="img/sequence/sky045.jpg" alt="">
+                <img src="img/sequence/sky046.jpg" alt="">
+                <img src="img/sequence/sky047.jpg" alt="">
+                <img src="img/sequence/sky048.jpg" alt="">
+                <img src="img/sequence/sky049.jpg" alt="">
+                <img src="img/sequence/sky050.jpg" alt="">
+                <img src="img/sequence/sky051.jpg" alt="">
+                <img src="img/sequence/sky052.jpg" alt="">
+                <img src="img/sequence/sky053.jpg" alt="">
+                <img src="img/sequence/sky054.jpg" alt="">
+                <img src="img/sequence/sky055.jpg" alt="">
+                <img src="img/sequence/sky056.jpg" alt="">
+                <img src="img/sequence/sky057.jpg" alt="">
+                <img src="img/sequence/sky058.jpg" alt="">
+                <img src="img/sequence/sky059.jpg" alt="">
+                <img src="img/sequence/sky060.jpg" alt="">
+                <img src="img/sequence/sky061.jpg" alt="">
+                <img src="img/sequence/sky062.jpg" alt="">
+                <img src="img/sequence/sky063.jpg" alt="">
+                <img src="img/sequence/sky064.jpg" alt="">
+                <img src="img/sequence/sky065.jpg" alt="">
+                <img src="img/sequence/sky066.jpg" alt="">
+                <img src="img/sequence/sky067.jpg" alt="">
+                <img src="img/sequence/sky068.jpg" alt="">
+                <img src="img/sequence/sky069.jpg" alt="">
+                <img src="img/sequence/sky070.jpg" alt="">
+                <img src="img/sequence/sky071.jpg" alt="">
+                <img src="img/sequence/sky072.jpg" alt="">
+                <img src="img/sequence/sky073.jpg" alt="">
+                <img src="img/sequence/sky074.jpg" alt="">
+                <img src="img/sequence/sky075.jpg" alt="">
+                <img src="img/sequence/sky076.jpg" alt="">
+                <img src="img/sequence/sky077.jpg" alt="">
+                <img src="img/sequence/sky078.jpg" alt="">
+                <img src="img/sequence/sky079.jpg" alt="">
+                <img src="img/sequence/sky080.jpg" alt="">
+                <img src="img/sequence/sky081.jpg" alt="">
+                <img src="img/sequence/sky082.jpg" alt="">
+                <img src="img/sequence/sky083.jpg" alt="">
+                <img src="img/sequence/sky084.jpg" alt="">
+                <img src="img/sequence/sky085.jpg" alt="">
+                <img src="img/sequence/sky086.jpg" alt="">
+                <img src="img/sequence/sky087.jpg" alt="">
+                <img src="img/sequence/sky088.jpg" alt="">
+                <img src="img/sequence/sky089.jpg" alt="">
+                <img src="img/sequence/sky090.jpg" alt="">
+                <img src="img/sequence/sky091.jpg" alt="">
+                <img src="img/sequence/sky092.jpg" alt="">
+                <img src="img/sequence/sky093.jpg" alt="">
+                <img src="img/sequence/sky094.jpg" alt="">
+                <img src="img/sequence/sky095.jpg" alt="">
+                <img src="img/sequence/sky096.jpg" alt="">
+                <img src="img/sequence/sky097.jpg" alt="">
+                <img src="img/sequence/sky098.jpg" alt="">
+                <img src="img/sequence/sky099.jpg" alt="">
+                <img src="img/sequence/sky100.jpg" alt="">
+                <img src="img/sequence/sky101.jpg" alt="">
+                <img src="img/sequence/sky102.jpg" alt="">
+                <img src="img/sequence/sky103.jpg" alt="">
+                <img src="img/sequence/sky104.jpg" alt="">
+                <img src="img/sequence/sky105.jpg" alt="">
+                <img src="img/sequence/sky106.jpg" alt="">
+                <img src="img/sequence/sky107.jpg" alt="">
+                <img src="img/sequence/sky108.jpg" alt="">
+                <img src="img/sequence/sky109.jpg" alt="">
+                <img src="img/sequence/sky110.jpg" alt="">
+                <img src="img/sequence/sky111.jpg" alt="">
+                <img src="img/sequence/sky112.jpg" alt="">
+                <img src="img/sequence/sky113.jpg" alt="">
+                <img src="img/sequence/sky114.jpg" alt="">
+                <img src="img/sequence/sky115.jpg" alt="">
+                <img src="img/sequence/sky116.jpg" alt="">
+                <img src="img/sequence/sky117.jpg" alt="">
+                <img src="img/sequence/sky118.jpg" alt="">
+                <img src="img/sequence/sky119.jpg" alt="">
+                <img src="img/sequence/sky120.jpg" alt="">
+                <img src="img/sequence/sky121.jpg" alt="">
+                <img src="img/sequence/sky122.jpg" alt="">
+                <img src="img/sequence/sky123.jpg" alt="">
+                <img src="img/sequence/sky124.jpg" alt="">
+                <img src="img/sequence/sky125.jpg" alt="">
+                <img src="img/sequence/sky126.jpg" alt="">
+                <img src="img/sequence/sky127.jpg" alt="">
+                <img src="img/sequence/sky128.jpg" alt="">
+                <img src="img/sequence/sky129.jpg" alt="">
+                <img src="img/sequence/sky130.jpg" alt="">
+                <img src="img/sequence/sky131.jpg" alt="">
+                <img src="img/sequence/sky132.jpg" alt="">
+                <img src="img/sequence/sky133.jpg" alt="">
+                <img src="img/sequence/sky134.jpg" alt="">
+                <img src="img/sequence/sky135.jpg" alt="">
+                <img src="img/sequence/sky136.jpg" alt="">
+                <img src="img/sequence/sky137.jpg" alt="">
+                <img src="img/sequence/sky138.jpg" alt="">
+                <img src="img/sequence/sky139.jpg" alt="">
+                <img src="img/sequence/sky140.jpg" alt="">
+                <img src="img/sequence/sky141.jpg" alt="">
+                <img src="img/sequence/sky142.jpg" alt="">
+                <img src="img/sequence/sky143.jpg" alt="">
+                <img src="img/sequence/sky144.jpg" alt="">
+                <img src="img/sequence/sky145.jpg" alt="">
+                <img src="img/sequence/sky146.jpg" alt="">
+                <img src="img/sequence/sky147.jpg" alt="">
+                <img src="img/sequence/sky148.jpg" alt="">
+                <img src="img/sequence/sky149.jpg" alt="">
+                <img src="img/sequence/sky150.jpg" alt="">
+                <img src="img/sequence/sky151.jpg" alt="">
+                <img src="img/sequence/sky152.jpg" alt="">
+                <img src="img/sequence/sky153.jpg" alt="">
+                <img src="img/sequence/sky154.jpg" alt="">
+                <img src="img/sequence/sky155.jpg" alt="">
+                <img src="img/sequence/sky156.jpg" alt="">
+                <img src="img/sequence/sky157.jpg" alt="">
+                <img src="img/sequence/sky158.jpg" alt="">
+                <img src="img/sequence/sky159.jpg" alt="">
+                <img src="img/sequence/sky160.jpg" alt="">
+                <img src="img/sequence/sky161.jpg" alt="">
+                <img src="img/sequence/sky162.jpg" alt="">
+                <img src="img/sequence/sky163.jpg" alt="">
+                <img src="img/sequence/sky164.jpg" alt="">
+                <img src="img/sequence/sky165.jpg" alt="">
+                <img src="img/sequence/sky166.jpg" alt="">
+                <img src="img/sequence/sky167.jpg" alt="">
+                <img src="img/sequence/sky168.jpg" alt="">
+                <img src="img/sequence/sky169.jpg" alt="">
+                <img src="img/sequence/sky170.jpg" alt="">
+                <img src="img/sequence/sky171.jpg" alt="">
+                <img src="img/sequence/sky172.jpg" alt="">
+                <img src="img/sequence/sky173.jpg" alt="">
+                <img src="img/sequence/sky174.jpg" alt="">
+                <img src="img/sequence/sky175.jpg" alt="">
+                <img src="img/sequence/sky176.jpg" alt="">
+                <img src="img/sequence/sky177.jpg" alt="">
+                <img src="img/sequence/sky178.jpg" alt="">
+                <img src="img/sequence/sky179.jpg" alt="">
+                <img src="img/sequence/sky180.jpg" alt="">
+                <img src="img/sequence/sky181.jpg" alt="">
+                <img src="img/sequence/sky182.jpg" alt="">
+                <img src="img/sequence/sky183.jpg" alt="">
+                <img src="img/sequence/sky184.jpg" alt="">
+                <img src="img/sequence/sky185.jpg" alt="">
+                <img src="img/sequence/sky186.jpg" alt="">
+                <img src="img/sequence/sky187.jpg" alt="">
+                <img src="img/sequence/sky188.jpg" alt="">
+                <img src="img/sequence/sky189.jpg" alt="">
+                <img src="img/sequence/sky190.jpg" alt="">
+                <img src="img/sequence/sky191.jpg" alt="">
+                <img src="img/sequence/sky192.jpg" alt="">
+            </div>
+            <p class="instruction">
+                <img alt="" class="image" src="img/mouse-black.png" width="74" height="69">
+                <span class="text">Scroll to play</span>
+            </p>
+        </div><!-- /.scene#scene-1 -->
+
+        <div class="scene" id="scene-2">
+            <img class="scene-bg" src="img/bg-3.jpg" alt="" height="" width="" style="min-width:100%;min-height:100%;width:auto;height:auto;">
+            <div id="scene-2-content">
+                <div class="charts clearfix">
+
+                    <div class="chart" id="water">
+                        <div class="circle-mask-outer left">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="circle-mask-outer right">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="chart-content">
+                            <img class="icon" src="img/graphic-water.png" alt="Water">
+                            <p class="text">
+                                <span class="percent-number">60</span><span class="percent-symbol">%</span>
+                            </p>
+                        </div>
+                    </div><!-- /.chart -->
+
+                    <div class="chart" id="sunshine">
+                        <div class="circle-mask-outer left">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="circle-mask-outer right">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="chart-content">
+                            <img class="icon" src="img/graphic-sun.png" alt="Sunshine">
+                            <p class="text">
+                                <span class="percent-number">90</span><span class="percent-symbol">%</span>
+                            </p>
+                        </div>
+                    </div><!-- /.chart -->
+                    
+                    <div class="chart" id="birds">
+                        <div class="circle-mask-outer left">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="circle-mask-outer right">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="chart-content">
+                            <img class="icon" src="img/graphic-bird.png" alt="Birds">
+                            <p class="text">
+                                <span class="percent-number">20</span><span class="percent-symbol">%</span>
+                            </p>
+                        </div>
+                    </div><!-- /.chart -->
+
+                    <div class="chart" id="woods">
+                        <div class="circle-mask-outer left">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="circle-mask-outer right">
+                            <div class="circle-mask-inner">
+                                <div class="circle-body"></div>
+                            </div>
+                        </div>
+                        <div class="chart-content">
+                            <img class="icon" src="img/graphic-woods.png" alt="Woods">
+                            <p class="text">
+                                <span class="percent-number">45</span><span class="percent-symbol">%</span>
+                            </p>
+                        </div>
+                    </div><!-- /.chart -->
+
+                </div>
+            </div><!-- /#scene-2-content -->
+        </div><!-- /.scene#scene-2 -->
+
+        <div class="scene" id="scene-3">
+            <div class="mask" id="apple-1">
+                <img src="img/apple-red.jpg" alt="">
+                <div class="bar"></div>
+                <div class="line"></div>
+            </div>
+            <div class="mask" id="apple-2">
+                <img src="img/apple-blue.jpg" alt="">
+                <div class="bar"></div>
+                <div class="line"></div>
+            </div>
+            <div class="mask" id="apple-3">
+                <img src="img/apple-purple.jpg" alt="">
+                <div class="bar"></div>
+                <div class="line"></div>
+            </div>
+            <div class="mask" id="apple-4">
+                <img src="img/apple-green.jpg" alt="">
+                <div class="bar"></div>
+                <div class="line"></div>
+            </div>
+        </div><!-- /.scene#scene-3 -->
+
+    </div><!-- /#page-main -->
+</div><!-- /#page-main-wrap -->
+
+<div class="progress" id="progress">
+    <span class="progress-bar"></span>
+    <span class="progress-text">0%</span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Base */
+html { font-family: "Ropa Sans", sans-serif; font-size: 16px; line-height: 1.5; }
+body { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); min-width: 960px; }
+.dummy { margin: 0 auto; max-width: 32em; padding: 6em 0; }
+
+
+/*
+ * Smooth scroll
+ */
+
+/* Back-to-Top button */
+.back-to-top {
+    background-color: rgb(240, 240, 240);
+    border-width: 0;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+}
+.back-to-top .label {
+    display: block;
+    height: 18px;
+    margin:auto;
+    overflow: hidden;
+    width: 26px;
+}
+.back-to-top .label:before {
+    content: url(../img/sprites.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    margin-left: -40px;
+}
+
+.no-js .back-to-top {
+    display: none;
+}

@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* Base */
+html { font-family: "Helvetica Neue", "Arial", sans-serif; height: 100%; }
+body { height: 100%; }
+p { margin: 0; }
+.scene { position: relative; height: 100%; overflow: hidden; width: 100%; }
+
+
+/*
+ * インフォグラフィック
+ */
+
+#scene-2 .scene-bg { 
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#scene-2-content {
+    position: absolute;
+    width: 50%;
+    min-width: 600px;
+    height: 100%;
+    top:0;
+    right: -50%;
+    background-color: #111;
+}
+
+.charts { 
+    position: relative; 
+    margin: 0 auto;
+    width: 600px;
+    height: 600px; 
+    top: 50%;
+    margin-top: -300px;
+    overflow: hidden;
+}
+
+.chart  { 
+    float: left;
+    position: relative; 
+    margin: 20px;
+    width: 240px;
+    height: 240px;
+}
+
+.circle-mask-outer,
+.circle-mask-inner {
+    overflow: hidden;
+    position: absolute;
+    width: 120px;
+    height: 240px;
+}
+
+.circle-mask-outer.left {
+    left: 0;
+}
+.circle-mask-outer.right {
+    right: 0;
+}
+
+.circle-mask-outer.left .circle-mask-inner {
+    left: 100%;
+    -webkit-transform-origin: 0 50%;
+        -ms-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+}
+.circle-mask-outer.right .circle-mask-inner {
+    right: 100%;
+    -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+}
+
+.circle-body {
+    border-radius: 50%;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+}
+.circle-mask-outer.left .circle-body {
+    right: 0;
+}
+.circle-mask-outer.right .circle-body {
+    left: 0;
+}
+#water .circle-body {
+    background-color: #0078ff;
+}
+#sunshine .circle-body {
+    background-color: #ef6122;
+}
+#birds .circle-body {
+    background-color: #9a22ef;
+}
+#woods .circle-body {
+    background-color: #138600;
+}
+
+.chart-content {
+    position: absolute;
+    left: 20px;
+    top:20px;
+    width: 200px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding-top: 40px;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.chart-content .icon {}
+.chart-content .text { 
+    left: 5px;
+    line-height: 1;
+    position: relative;
+}
+
+.chart-content .percent-number {
+    font-size: 50px;
+    font-weight: bold;
+}
+.chart-content .percent-symbol {
+    font-size: 30px;
+}
+
+.no-borderradius .circle-mask-outer,
+.no-csstransforms .circle-mask-outer {
+    display: none;
+}
+
+.no-borderradius .chart-content,
+.no-csstransforms .chart-content {
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 180px;
+    padding-top: 60px;
+    background: url(../img/chart-bg.png) no-repeat 0 0;
+}
+.no-borderradius #sunshine .chart-content,
+.no-csstransforms #sunshine .chart-content {
+    background-position: -240px 0;
+}
+.no-borderradius #birds .chart-content,
+.no-csstransforms #birds .chart-content {
+    background-position: -480px 0;
+}
+.no-borderradius #woods .chart-content,
+.no-csstransforms #woods .chart-content {
+    background-position: -720px 0;
+}
